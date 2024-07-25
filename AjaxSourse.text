@@ -1,0 +1,11 @@
+$.ajax({
+    url: 'formData.php',
+    type: 'POST',
+    dataType: 'JSON',
+    //When you use the serialize you could to be use
+    data: formData + "&action=" + action,
+    beforeSend: function(){},
+    success: function(){console.log('That is ok')},
+    error: function(){console.log('That is error')},
+    complete: function(){}
+})
